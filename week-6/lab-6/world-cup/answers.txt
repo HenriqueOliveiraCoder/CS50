@@ -1,0 +1,15 @@
+Times:
+
+10 simulations:0m0.030s
+100 simulations:0m0.031s
+1000 simulations:0m0.053s
+10000 simulations:0m0.165s
+100000 simulations:0m1.089s
+1000000 simulations:0m9.449s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?: the one that australia had 20% of chances, not the 6.7% that actually is, or the one that says brazil has 10%, and not 2.8. There are more innacurrate predictions, and they may change at each run of the program. It happens because when you have few simulations, the results can not be as stable as when you have more of them, due to the smaller sample space.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?: I would call good enough the 1000 or 10000, because after that numbers the predictions started to stabilize, and then, the time cost of the largest predictions are unecessary.

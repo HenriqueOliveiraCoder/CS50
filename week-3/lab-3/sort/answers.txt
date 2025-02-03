@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: sort1 was the one that took more time to complete. Bubble sort is thetha(n^2) and also a litte slower than selection sort.
+
+sort2 uses: Merge sort
+
+How do you know?: sort2 took less time to complete. It is faster than others by being theta(n log n).
+
+sort3 uses: Selection sort
+
+How do you know?: sort3 is a little faster than sort1, and really slower than sort2, and that corresponds to the tetha(n^2) of selection sort(it is faster than bubble sort)
