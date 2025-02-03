@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+{% block main %}
+    <p>A share of {{ name }} ({{ symbol }}) costs {{ currency }} {{ price }}.</p>
+
+    <div id="chart" class="chart" style="margin-left: 20%; margin-right: 20%;"></div>
+
+    <p style="margin-left: 25%; margin-right: 25%;">{{ info }}</p>
+
+    <div>
+        <p style="margin: 0; display: inline;">Website: </p> <a style="margin: 0; display: inline;" href="{{ website }}">{{ website }}</a>
+    </div>
+
+    <div id="graph-data" style="display:none;">{{ graph | safe }}</div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        var graphData = JSON.parse(document.getElementById('graph-data').textContent);
+
+        Plotly.plot("chart", graphData, {});
+    </script>
+{% endblock %}

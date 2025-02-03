@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                const incorect_buttons = document.querySelectorAll('#button_2, #button_3, #button_4, #button_5');
+                const correct_button = document.querySelector('#button_1');
+                const answer_button = document.querySelector('#answer_button');
+                const answer = document.querySelector('#answer');
+
+                correct_button.addEventListener('click', () => {
+                    correct_button.style.backgroundColor = 'rgba(0, 200, 0, 0.5)';
+                    part_1_check.innerHTML = 'Correct'
+                    part_1_check.style.color = 'rgba(0, 200, 0, 0.5)'
+                })
+
+                for (let button of incorect_buttons) {
+                    button.addEventListener('click', () => {
+                        button.style.backgroundColor = 'rgba(255, 0, 0, 0.5)';
+                        part_1_check.innerHTML = 'Incorrect'
+                        part_1_check.style.color = 'rgba(255, 0, 0, 0.5)'
+                    })
+                }
+
+                answer_button.addEventListener('click', () => {
+                    if (answer.value == 'blessing' || answer.value == 'Blessing') {
+                        part_2_check.innerHTML = 'Correct'
+                        part_2_check.style.color = 'rgba(0, 200, 0, 0.5)'
+                    }
+                    else {
+                        part_2_check.innerHTML = 'Incorrect'
+                        part_2_check.style.color = 'rgba(255, 0, 0, 0.5)'
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>How many Earths could fit in the Sun?</h3>
+                <button type="button" id="button_1">1.000.000</button>
+                <button type="button" id="button_2">10.000.000</button>
+                <button type="button" id="button_3">2.345.000</button>
+                <button type="button" id="button_4">2.000.001</button>
+                <button type="button" id="button_5">2.000.000</button>
+                <h3 id='part_1_check'></h3>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What do you call a group of Unicorns?</h3>
+                <input type="text" id="answer">
+                <button type="button" id="answer_button">Check Answer</button>
+                <h3 id='part_2_check'></h3>
+            </div>
+        </div>
+    </body>
+</html>

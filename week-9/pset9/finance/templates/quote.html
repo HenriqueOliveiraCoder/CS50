@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <input placeholder="Symbol" name="symbol" class="form-control mx-auto" style="overflow: hidden; width: 240px;">
+        <br>
+        <select class="form-select mx-auto w-auto" name="dropdown">
+            <option disabled selected>Graph Time</option>
+            <option value="max">Maximum</option>
+            <option value="ytd">Year to Date</option>
+            <option value="5y">5 Years</option>
+            <option value="1y">1 Year</option>
+            <option value="6mo">6 Months</option>
+            <option value="1mo">1 Month</option>
+            <option value="5d">5 Days</option>
+            <option value="1d">1 Day</option>
+        </select>
+        <br><br>
+        <button type="submit" class="button form-control mx-auto w-auto">Quote</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,110 @@
+body {
+    background-color: rgb(220, 250, 200);
+}
+
+h1 {
+    color: white;
+    font-family: georgia serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 72px;
+    background-color: rgb(0, 100, 0);
+    border-style: solid;
+    border-top-width: 200px;
+    border-bottom-width: 75px;
+    border-color: rgb(0, 100, 0);
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: georgia;
+    font-weight: 300;
+    font-size: 42px;
+}
+
+h3 {
+    text-indent: 30px;
+    font-family: georgia;
+    font-size: 20px;
+    text-align: justify;
+}
+
+hr {
+    border-width: 3px;
+    border-color: black;
+}
+
+button {
+    font-family: georgia;
+    color: white;
+    background-color: rgb(0, 100, 0);
+    ;
+}
+
+.Body {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.Header {
+    background-color: rgb(50, 150, 50);
+    overflow: hidden;
+}
+
+.Header a {
+    font-family: georgia serif;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.Header a:hover {
+    background-color: white;
+    color: black;
+}
+
+.Header a.active {
+    background-color: rgb(0, 100, 0);
+    color: white;
+}
+
+.Header a.logo {
+    font-family: georgia;
+    float: right;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: rgb(50, 150, 50);
+    color: white
+}
+
+.Footer {
+    margin-top: 45px;
+    clear: both;
+    font-family: georgia;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    background-color: rgb(0, 100, 0);
+    border-style: solid;
+    border-top-width: 20px;
+    border-bottom-width: 40px;
+    border-color: rgb(0, 100, 0);
+}
+
+.carousel {
+    width: auto;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    margin-bottom: 45px;
+    margin-top: 15px;
+    float: center;
+}
+
+html,
+body {
+    height: 100%;
+    zoom: 1.1;
+}
